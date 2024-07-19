@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E0A75E;
+}
+
+.header {
+    height: 48px;
+    background: #973131;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    padding: 16px;
+    padding-left: 32px;;
+    font-size: 32px;
+
+}
+
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputs form{
+    border: 3px solid #F9D689;
+    padding: 20px;
+    gap: 8px;
+    display:flex;
+    margin: 16px;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 600px;
+}
+
+.input-box{
+    display:flex;
+    align-items: left;
+    flex-direction: column;
+    
+}
+
+.inputs input[type=text]{
+    
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+
+}
+
+.inputs input[type=number]{
+    padding: 12px, 20px;
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:40%;
+
+}
+
+.inputs input[type=submit]{
+    width: 30%;
+    max-width: 60px;
+    margin: auto;
+}
+
+
+#books-table {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 3px solid #F5E7B2;
+    background-color: #F9D689;
+    padding: 8px;
+}
+
+.delete-btn {
+    position: absolute; /* Absolute positioning relative to the card */
+    top: 0; /* Positions at the top */
+    right: 0; /* Positions at the right */
+    background-color: red; /* Makes the button red for visibility */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    cursor: pointer;
+}
+
+.card-content {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    gap: 5px; /* Adds space between items */
+}

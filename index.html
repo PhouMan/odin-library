@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>library</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">Za Library</div>
+		<div class="inputs">
+			<form id="createBook">
+				<div class="input-box">
+					<label for="title_input">Title</label>
+					<input type="text" id="title_input" name="title" placeholder="Book title" required>
+				</div>
+				<div class="input-box">
+					<label for="author_input">Author</label>
+					<input type="text" id="author_input" name="author" placeholder="Name of the author" required>
+				</div>
+				<div class="input-box">
+					<label for="pages_input">Number of pages</label>
+					<input type="number" id="pages_input" name="pages" min="1" required>	
+				</div>
+				<!-- Read options -->
+				<div class="read-buttons">
+					<label for="unread">Unread</label>
+					<input type="radio" id="unread" name="read_selection" value="Unread" required>
+	
+					<label for="read">Read</label>
+					<input type="radio" id="read" name="read_selection" value="Read" required>
+				</div>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+        <div id="books-table"></div>
+		<!--
+			<div class="card">
+				<p class="Title: "></p>
+				<p class="Author: "></p>
+				<p class="Pages:"></p>
+				<p class="Status: "></p>
+			</div>
+		-->
+		<script src="scripts.js"></script>
+	</body>
+</html>
